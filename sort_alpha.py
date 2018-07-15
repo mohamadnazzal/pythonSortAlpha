@@ -2,18 +2,18 @@
 
 print "Wait.."
 
-bands = list()
+words = list()
 
-filename = 'Names_sorted.txt'
+filename = 'words.txt'
 with open (filename) as fin:
     for line in fin:
-        bands.append(line.strip())
+        words.append(line.strip())
 
-bands.sort()
+words.sort()
 
-filename = 'names_sorted_final.txt'
+filename = 'words_sorted_done.txt'
 with open(filename, 'w') as fout:
-    for band in bands:
-        fout.write(band + '\n')
+    for word in words:
+        fout.write(word + '\n')
 
 print "done"
